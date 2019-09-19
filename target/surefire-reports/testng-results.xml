@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="9" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-09-18T15:35:31 EEST" name="TestSuite" finished-at="2019-09-18T15:36:06 EEST" duration-ms="35731">
+    <groups>
+    </groups>
+    <test started-at="2019-09-18T15:35:31 EEST" name="AutoQA" finished-at="2019-09-18T15:36:06 EEST" duration-ms="35731">
+      <class name="ProductTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:ProductTest@4a1c0752]" started-at="2019-09-18T15:35:54 EEST" name="setUp" finished-at="2019-09-18T15:35:55 EEST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addProductToCartTest()[pri:0, instance:ProductTest@4a1c0752]" started-at="2019-09-18T15:35:55 EEST" name="addProductToCartTest" finished-at="2019-09-18T15:36:05 EEST" duration-ms="10628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProductToCartTest -->
+        <test-method signature="deleteNotExistProduct()[pri:0, instance:ProductTest@4a1c0752]" started-at="2019-09-18T15:36:05 EEST" name="deleteNotExistProduct" finished-at="2019-09-18T15:36:06 EEST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNotExistProduct -->
+        <test-method signature="getIphoneListTest()[pri:0, instance:ProductTest@4a1c0752]" started-at="2019-09-18T15:36:06 EEST" name="getIphoneListTest" finished-at="2019-09-18T15:36:06 EEST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getIphoneListTest -->
+      </class> <!-- ProductTest -->
+      <class name="UserTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:31 EEST" name="setUp" finished-at="2019-09-18T15:35:31 EEST" duration-ms="99" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginExistUser()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:31 EEST" name="loginExistUser" finished-at="2019-09-18T15:35:42 EEST" duration-ms="10818" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=UTF-8'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=UTF-8'.
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:237)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:249)
+at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:89)
+at io.restassured.internal.mapping.ObjectMapping$deserialize$0.call(Unknown Source)
+at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:224)
+at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+at business.UserBL.userAuth(UserBL.java:80)
+at business.UserBL.userLogin(UserBL.java:70)
+at UserTest.loginExistUser(UserTest.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginExistUser -->
+        <test-method signature="loginNotExistUser()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:42 EEST" name="loginNotExistUser" finished-at="2019-09-18T15:35:42 EEST" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNotExistUser -->
+        <test-method signature="registerEmptyUser()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:42 EEST" name="registerEmptyUser" finished-at="2019-09-18T15:35:43 EEST" duration-ms="613" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerEmptyUser -->
+        <test-method signature="registerTest()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:43 EEST" name="registerTest" finished-at="2019-09-18T15:35:46 EEST" duration-ms="3292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerTest -->
+        <test-method signature="registerUserWithDigitName()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:46 EEST" name="registerUserWithDigitName" finished-at="2019-09-18T15:35:49 EEST" duration-ms="3092" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at utils.SerchingIntoList.messageSearching(SerchingIntoList.java:14)
+at assertions.ErrorAssertions.hasBadInputErrorMessage(ErrorAssertions.java:16)
+at business.UserBL.userRegisterWithDigitsName(UserBL.java:153)
+at UserTest.registerUserWithDigitName(UserTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithDigitName -->
+        <test-method signature="registerUserWithEmailOnly()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:50 EEST" name="registerUserWithEmailOnly" finished-at="2019-09-18T15:35:50 EEST" duration-ms="621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithEmailOnly -->
+        <test-method signature="registerUserWithInvalidPhoneNumber()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:50 EEST" name="registerUserWithInvalidPhoneNumber" finished-at="2019-09-18T15:35:51 EEST" duration-ms="616" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithInvalidPhoneNumber -->
+        <test-method signature="registerUserWithMetaSymbolName()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:51 EEST" name="registerUserWithMetaSymbolName" finished-at="2019-09-18T15:35:54 EEST" duration-ms="2886" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at utils.SerchingIntoList.messageSearching(SerchingIntoList.java:14)
+at assertions.ErrorAssertions.hasBadInputErrorMessage(ErrorAssertions.java:16)
+at business.UserBL.userRegisterWithMetaSymbolsName(UserBL.java:167)
+at UserTest.registerUserWithMetaSymbolName(UserTest.java:53)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:835)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithMetaSymbolName -->
+        <test-method signature="registerUserWithNotConfirmPassword()[pri:0, instance:UserTest@40021799]" started-at="2019-09-18T15:35:54 EEST" name="registerUserWithNotConfirmPassword" finished-at="2019-09-18T15:35:54 EEST" duration-ms="622" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerUserWithNotConfirmPassword -->
+      </class> <!-- UserTest -->
+    </test> <!-- AutoQA -->
+  </suite> <!-- TestSuite -->
+</testng-results>

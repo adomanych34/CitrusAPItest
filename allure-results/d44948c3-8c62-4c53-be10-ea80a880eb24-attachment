@@ -1,0 +1,28 @@
+Request method:	POST
+Request URI:	https://my.citrus.ua/api/v2/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{"email":"arjqdh@rmsn.zvd","name":"{}{__+)+_+","phone":"45812","password":"GcDbXRPc","confirm_password":"GcDbXRPc"}
+HTTP/1.1 200 OK
+Date: Wed, 18 Sep 2019 12:36:08 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=d2f7c0fc5dfdd804d0767afa27c234ed31568810168; expires=Thu, 17-Sep-20 12:36:08 GMT; path=/; domain=.citrus.ua; HttpOnly; Secure
+Cache-Control: no-cache, private
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 51835d224cfaacd0-OTP
+Content-Encoding: gzip
+
+{"success":false,"code":400,"errors":[{"field":"phone","messages":["\u041f\u043e\u043b\u0435 phone \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c \u043a\u043e\u0440\u0440\u0435\u043a\u0442\u043d\u044b\u043c \u043d\u043e\u043c\u0435\u0440\u043e\u043c \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430."]}]}
+

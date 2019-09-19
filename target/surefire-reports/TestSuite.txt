@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 38.538 s <<< FAILURE! - in TestSuite
+loginExistUser(UserTest)  Time elapsed: 11.299 s  <<< FAILURE!
+java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was 'text/html; charset=UTF-8'.
+	at UserTest.loginExistUser(UserTest.java:38)
+
+registerUserWithDigitName(UserTest)  Time elapsed: 3.131 s  <<< FAILURE!
+java.lang.NullPointerException
+	at UserTest.registerUserWithDigitName(UserTest.java:48)
+
+registerUserWithMetaSymbolName(UserTest)  Time elapsed: 2.895 s  <<< FAILURE!
+java.lang.NullPointerException
+	at UserTest.registerUserWithMetaSymbolName(UserTest.java:53)
+

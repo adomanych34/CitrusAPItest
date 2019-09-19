@@ -1,0 +1,8 @@
+<suite name="TestSuite">
+    <test name="AutoQA" parallel="methods" thread-count="1">
+        <classes>
+            <class name="UserTest" />
+            <class name="ProductTest" />
+        </classes>
+    </test>
+</suite>

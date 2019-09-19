@@ -1,0 +1,27 @@
+Request method:	DELETE
+Request URI:	https://my.citrus.ua/api/v2/ecommerce/baskets/185400544/products/6737739
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 18 Sep 2019 12:36:23 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: __cfduid=dc44dc2ddb0f19aa3875243957d71908a1568810183; expires=Thu, 17-Sep-20 12:36:23 GMT; path=/; domain=.citrus.ua; HttpOnly; Secure
+Cache-Control: no-cache, private
+Strict-Transport-Security: max-age=31536000; includeSubDomains;
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 51835d805cdaad12-OTP
+Content-Encoding: gzip
+
+{"success":false,"code":404,"errors":["Product in basket not found"]}
+
